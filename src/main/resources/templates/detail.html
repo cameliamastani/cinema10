@@ -6,8 +6,13 @@
 </head>
 <body>
 <h1 th:text="${film.titre}">Titre</h1>
-<h2>Note: <span th:text="${film.note}">Note</span></h2>
-<h3 >Affiche: <span th:text="${film.afficheNom}">Affiche</span></h3>
+<h3 ><span th:text="${film.resume}"></span></h3>
+
+<ul>
+    <li th:each="act : ${acteur}">
+        <a th:text="${act.getPrenom()} " th:href="@{/act/{id}(id=${act.getIdp()})}"></a>
+    </li>
+</ul>
 
 <!--<img th:src="@{/{id} (id=${film.afficheNom})}"/>-->
 

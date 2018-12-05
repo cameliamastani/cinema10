@@ -1,4 +1,4 @@
-package ovh.cyan.cda.cinema;
+package fr.camelia.cda.cinema;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
